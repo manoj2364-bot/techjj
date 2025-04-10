@@ -44,7 +44,7 @@ async def save_group(bot, message):
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/psmovieworld'),
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/psmoviegroup1')
         ],[
-            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url=OWNER_LNK)
+            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url='telegram.me/psmoviegroup')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -61,10 +61,10 @@ async def save_group(bot, message):
                     except:
                         pass
                 button = [[
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/psmovieworld'),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/psmoviegroup1')
                 ],[
-                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url=OWNER_LNK)
+                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url='telegram.me/psmoviegroup')
                 ]]
                 temp.MELCOW['welcome'] = await message.reply_text(
                     text=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
@@ -86,8 +86,8 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support Group',url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url=OWNER_LNK)
+            InlineKeyboardButton('Support Group',url=f'https://t.me/psmovieworld'),
+            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url='telegram.me/psmoviegroup')
         ],[
             InlineKeyboardButton('Use Me Here', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
@@ -128,7 +128,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('Support', url=f'https://t.me/psmovieworld')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
